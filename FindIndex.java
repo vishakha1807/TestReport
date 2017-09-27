@@ -4,9 +4,10 @@ public class FindIndex {
 	
 	public static void main(String[] args) {
 		String str = "Vishak1a";
-		System.out.println("index of 1 is "+str.indexOf('1')); 
+		System.out.println(str.split("[a-z]").length+1);
 		System.out.println("Complexity is O(n)");
 
+		
 	}
-
 }
+
