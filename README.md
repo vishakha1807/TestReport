@@ -8,4 +8,4 @@
 
 ## 4.In RemoveHtmlTag class i had used removeAll() method which works with the complexity O(n) because this method traverse the string only one time and which is based on regular expression.
 
-## 5.In CountLines program the complexity is-O(n) because in this program i had use split() method and the algorithm of split() method is pretty straight forward, based on an existing regex implementation so the searching for the breaks between "words" one by one will be O(n).
+## 5.In CountLines program the complexity is-O(n) because in this program i had use split() method and the algorithm of split() method is pretty straight forward, based on an existing regex implementation so the searching for the breaks at "\n" between "words" one by one will be O(n).
