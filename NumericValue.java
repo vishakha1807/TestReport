@@ -8,6 +8,8 @@ public class NumericValue {
 		String c[]={"TEN","TWENTY","THIRTY","FOURTY","FIFTY","SIXTY","SEVENTY","EIGHTY","NINTY"};
 		int no=654231;
 		int t;
+		if(no>10000)
+		{
 		 if(no>100000)
 		 {
 		  t=no/100000;
@@ -41,7 +43,37 @@ public class NumericValue {
 		 {
 			 System.out.println(a[no-1]+" ");
 		 }	
-		 System.out.println("Complexity is O(n)");
+	}
+		else
+		 {
+			 if(no<9999)
+			 {
+				 t=no/1000;
+				 no=no%1000;
+				 System.out.print(a[t-1]+" THOUSAND ");
+			 }
+			 if(no>100)
+			 {
+			  t=no/100;
+			  no=no%100;
+			  System.out.print(a[t-1]+" HUNDRED AND ");
+			 }
+			 if(no>=10 && no<20)
+			 {
+			  t=no/10;
+			  System.out.print(b[t-1]+" ");
+			 }
+			 if(no>19 && no<=100)
+			 {
+			  t=no/10;
+			  no=no%10;
+			  System.out.print(c[t-1]+" ");
+			 }
+			 if(no<10)
+			 {
+				 System.out.println(a[no-1]+" ");
+			 }
+			}
 
 	}
 
